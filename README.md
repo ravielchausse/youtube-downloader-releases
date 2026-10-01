@@ -20,12 +20,50 @@ Microsoft Edge WebView2, que já vem no Windows 11. Se faltar, o instalador o in
 
 ## Usar
 
-1. Cole o link do vídeo, por exemplo `https://www.youtube.com/watch?v=...`.
-2. Marque **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos.
-3. Clique em **Baixar**.
+Na aba **Baixar**, escolha de onde vêm os vídeos:
+
+- **Vídeo ou playlist**: cole o link de um vídeo ou de uma playlist. Os vídeos de uma playlist vão
+  para uma subpasta com o nome dela.
+- **Lista**: cole vários links, um por linha.
+- **Canal · populares**: os vídeos mais vistos de um canal, numa faixa de duração, numa subpasta com o
+  nome do canal. Um canal grande leva alguns minutos para ser analisado, e dá para cancelar.
+- **Mais assistidos**: escolha o arquivo `watch-history.json` exportado pelo Google Takeout (os passos
+  estão na tela), marque os vídeos e adicione. O histórico não fica guardado no app.
+
+Antes de adicionar, escolha:
+
+- **O que salvar**: o vídeo, o vídeo e a transcrição, ou só a transcrição. A transcrição é um
+  arquivo `.txt` feito das legendas do próprio YouTube; um vídeo sem legenda não tem transcrição.
+- **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos por vídeo.
+- **Pular os que já estão no histórico**, para não baixar de novo o que você já tem.
+
+Os vídeos entram numa **fila**, que baixa 2 de cada vez (de 1 a 4, em "Downloads ao mesmo tempo").
+Dá para pausar a fila e cancelar um item. Se o app for fechado no meio, a fila volta pausada na
+próxima vez.
 
 Os vídeos vão para a pasta **Vídeos\YouTube Downloader**. Para mudar, use **Alterar pasta**. Se
 já existir um arquivo com o mesmo nome, o novo é salvo como `Título (2)`, e nada é substituído.
+
+## Histórico
+
+A aba **Histórico** lista o que foi baixado neste computador. Dá para buscar pelo título, baixar de
+novo, mostrar o arquivo na pasta e tirar da lista (o arquivo continua onde está). Um vídeo que já
+foi baixado entra na fila com o aviso "Já baixado em ...".
+
+## Tradução (opcional)
+
+Com uma chave da API do DeepL, a transcrição sai também traduzida para português, inglês ou
+espanhol, num segundo `.txt` ao lado do original.
+
+1. Crie uma conta **DeepL API Free** em <https://www.deepl.com/pro-api>. O cadastro pede um cartão
+   de crédito, mas o plano Free não cobra e traduz até 500 mil caracteres por mês.
+2. Copie a chave da conta (ela termina em `:fx`) e cole em **Tradução (DeepL)**, no app. Clique em
+   **Testar chave**.
+3. Ao adicionar vídeos com transcrição, marque **Traduzir para ...**.
+
+A chave fica cifrada neste computador. Com a tradução ligada, o texto da transcrição é enviado ao
+DeepL. Se o vídeo já tem uma legenda no idioma escolhido, ela é usada no lugar da tradução e não
+gasta a cota.
 
 ## Atualizações
 
