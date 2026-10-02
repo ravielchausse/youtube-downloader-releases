@@ -75,6 +75,11 @@ pronta, aparece o aviso **Atualização pronta**. O app só reinicia quando voc�
 
 Manter o app atualizado importa: quando o YouTube muda, uma versão antiga pode parar de baixar.
 
+## Se algo der errado
+
+Em **Problemas**, no fim da tela, **Abrir pasta de logs** mostra o registro do que o app fez, um
+arquivo por dia. Mande o arquivo do dia junto com a descrição do problema.
+
 ## Licenças
 
 O app inclui programas de terceiros, cada um com a própria licença. O texto completo está no
