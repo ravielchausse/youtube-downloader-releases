@@ -33,7 +33,9 @@ Na aba **Baixar**, escolha de onde vêm os vídeos:
 Antes de adicionar, escolha:
 
 - **O que salvar**: o vídeo, o vídeo e a transcrição, ou só a transcrição. A transcrição é um
-  arquivo `.txt` feito das legendas do próprio YouTube; um vídeo sem legenda não tem transcrição.
+  arquivo `.txt` feito das legendas do próprio YouTube. Se o vídeo não tem legenda, o app transcreve o
+  áudio no próprio computador: na primeira vez, baixa o modelo de transcrição (466 MB), e cada vídeo
+  leva mais ou menos a duração dele.
 - **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos por vídeo.
 - **Pular os que já estão no histórico**, para não baixar de novo o que você já tem.
 
@@ -82,6 +84,9 @@ arquivo `THIRD-PARTY-NOTICES.txt`, na pasta de instalação.
 - **OpenH264**, sob a licença BSD, usado na conversão para H.264. A licença de patentes do H.264
   oferecida pela Cisco cobre só o binário distribuído pela própria Cisco, não este.
 - **YoutubeExplode**, sob a LGPL v3.
+- **Whisper.net** e **whisper.cpp**, sob a licença MIT, usados para transcrever o áudio.
+- **Modelos do Whisper**, da OpenAI, sob a licença MIT. Não vêm no instalador: o app baixa o modelo
+  escolhido na primeira transcrição pelo áudio.
 
 O app é gratuito, para uso pessoal e familiar. Cada pessoa baixa pela própria conexão. Respeite os
 termos de uso do YouTube e os direitos de quem publicou o vídeo.
