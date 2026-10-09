@@ -1,7 +1,7 @@
 # YouTube Downloader para Windows
 
-Baixa vídeos do YouTube direto numa pasta do seu computador. Opcionalmente, converte o vídeo para
-H.264 HD 720p, um formato que praticamente qualquer TV, celular ou player abre.
+Baixa vídeos do YouTube, ou só o áudio, direto numa pasta do seu computador. Opcionalmente, converte
+o vídeo para H.264 HD 720p, um formato que praticamente qualquer TV, celular ou player abre.
 
 Aqui ficam só o instalador e as atualizações. O código-fonte é privado.
 
@@ -32,10 +32,13 @@ Na aba **Baixar**, escolha de onde vêm os vídeos:
 
 Antes de adicionar, escolha:
 
-- **O que salvar**: o vídeo, o vídeo e a transcrição, ou só a transcrição. A transcrição é um
-  arquivo `.txt` feito das legendas do próprio YouTube. Se o vídeo não tem legenda, o app transcreve o
+- **O que salvar**: o vídeo, só o áudio, cada um com ou sem a transcrição, ou só a transcrição. O
+  áudio sai em M4A ou MP3 (escolha em **Áudio · Formato**), com a capa, o título, o canal e o ano do
+  vídeo. A transcrição é um arquivo `.txt` feito das legendas do próprio YouTube. Se o vídeo não tem legenda, o app transcreve o
   áudio no próprio computador: na primeira vez, baixa o modelo de transcrição (466 MB), e cada vídeo
   leva mais ou menos a duração dele.
+- **Faixa de áudio**: num vídeo dublado, o vídeo e o áudio saem no idioma original. Para outro
+  idioma, cole o link de um vídeo e use **Escolher faixa de áudio**.
 - **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos por vídeo.
 - **Pular os que já estão no histórico**, para não baixar de novo o que você já tem.
 
