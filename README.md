@@ -39,6 +39,8 @@ Antes de adicionar, escolha:
   leva mais ou menos a duração dele.
 - **Faixa de áudio**: num vídeo dublado, o vídeo e o áudio saem no idioma original. Para outro
   idioma, cole o link de um vídeo e use **Escolher faixa de áudio**.
+- **Qualidade**: 480p, 720p, 1080p (o padrão) ou **Melhor disponível**. Até 1080p o vídeo vem em
+  H.264, que abre em qualquer aparelho; acima, em VP9 ou AV1, que TV antiga ou carro podem não abrir.
 - **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos por vídeo.
 - **Pular os que já estão no histórico**, para não baixar de novo o que você já tem.
 
