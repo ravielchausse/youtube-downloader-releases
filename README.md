@@ -37,8 +37,9 @@ Antes de adicionar, escolha:
   vídeo. A transcrição é um arquivo `.txt` feito das legendas do próprio YouTube. Se o vídeo não tem legenda, o app transcreve o
   áudio no próprio computador: na primeira vez, baixa o modelo de transcrição (466 MB), e cada vídeo
   leva mais ou menos a duração dele.
-- **Faixa de áudio**: num vídeo dublado, o vídeo e o áudio saem no idioma original. Para outro
-  idioma, cole o link de um vídeo e use **Escolher faixa de áudio**.
+- **Faixa de áudio**: num vídeo dublado, o vídeo, o áudio e a transcrição saem no idioma original.
+  Para outro idioma, cole o link de um vídeo e use **Escolher faixa de áudio**, ou **Escolher
+  legenda** para a transcrição.
 - **Qualidade**: 480p, 720p, 1080p (o padrão) ou **Melhor disponível**. Até 1080p o vídeo vem em
   H.264, que abre em qualquer aparelho; acima, em VP9 ou AV1, que TV antiga ou carro podem não abrir.
 - **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos por vídeo.
