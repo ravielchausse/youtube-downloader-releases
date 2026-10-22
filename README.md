@@ -47,7 +47,8 @@ Antes de adicionar, escolha:
 
 Os vídeos entram numa **fila**, que baixa 2 de cada vez (de 1 a 4, em "Downloads ao mesmo tempo").
 Dá para pausar a fila e cancelar um item. Se o app for fechado no meio, a fila volta pausada na
-próxima vez.
+próxima vez. Quando a fila termina com o app minimizado ou atrás de outra janela, o Windows mostra
+um aviso com quantos foram concluídos e quantos falharam; clicar nele abre a pasta.
 
 Os vídeos vão para a pasta **Vídeos\YouTube Downloader**. Para mudar, use **Alterar pasta**. Se
 já existir um arquivo com o mesmo nome, o novo é salvo como `Título (2)`, e nada é substituído.
