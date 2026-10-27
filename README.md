@@ -30,28 +30,51 @@ Na aba **Baixar**, escolha de onde vêm os vídeos:
 - **Mais assistidos**: escolha o arquivo `watch-history.json` exportado pelo Google Takeout (os passos
   estão na tela), marque os vídeos e adicione. O histórico não fica guardado no app.
 
+Copiou um link do YouTube? Ao abrir o app, ou ao voltar para ele, o campo do link já vem preenchido.
+Nada baixa sozinho, e o que você já tinha digitado nunca é trocado.
+
 Antes de adicionar, escolha:
 
 - **O que salvar**: o vídeo, só o áudio, cada um com ou sem a transcrição, ou só a transcrição. O
-  áudio sai em M4A ou MP3 (escolha em **Áudio · Formato**), com a capa, o título, o canal e o ano do
-  vídeo. A transcrição é um arquivo `.txt` feito das legendas do próprio YouTube. Se o vídeo não tem legenda, o app transcreve o
-  áudio no próprio computador: na primeira vez, baixa o modelo de transcrição (466 MB), e cada vídeo
-  leva mais ou menos a duração dele.
-- **Faixa de áudio**: num vídeo dublado, o vídeo, o áudio e a transcrição saem no idioma original.
-  Para outro idioma, cole o link de um vídeo e use **Escolher faixa de áudio**, ou **Escolher
-  legenda** para a transcrição.
+  áudio sai em M4A ou MP3 (veja [Configurações](#configurações)), com a capa, o título, o canal e o
+  ano do vídeo. A transcrição é um arquivo `.txt` feito das legendas do próprio YouTube. Se o vídeo
+  não tem legenda, o app transcreve o áudio no próprio computador: na primeira vez, baixa o modelo de
+  transcrição (466 MB, o padrão), e cada vídeo leva mais ou menos a duração dele.
 - **Qualidade**: 480p, 720p, 1080p (o padrão) ou **Melhor disponível**. Até 1080p o vídeo vem em
   H.264, que abre em qualquer aparelho; acima, em VP9 ou AV1, que TV antiga ou carro podem não abrir.
-- **Converter para H.264 HD 720p**, se quiser. A conversão leva alguns minutos por vídeo.
+
+O que se usa de vez em quando fica em **Mais opções**, um bloco fechado. Quando alguma delas está
+ligada, o nome do bloco mostra qual, para nada valer escondido:
+
+- **Escolher faixa de áudio** e **Escolher legenda**: num vídeo dublado, o vídeo, o áudio e a
+  transcrição saem no idioma original. Para outro idioma, cole o link de um vídeo e escolha a faixa ou
+  a legenda.
+- **Traduzir para ...**: a transcrição sai também traduzida (veja [Tradução](#tradução-opcional)).
+- **Converter para H.264 HD 720p**. A conversão leva alguns minutos por vídeo, e a escolha fica
+  lembrada para os próximos downloads.
 - **Pular os que já estão no histórico**, para não baixar de novo o que você já tem.
 
-Os vídeos entram numa **fila**, que baixa 2 de cada vez (de 1 a 4, em "Downloads ao mesmo tempo").
-Dá para pausar a fila e cancelar um item. Se o app for fechado no meio, a fila volta pausada na
-próxima vez. Quando a fila termina com o app minimizado ou atrás de outra janela, o Windows mostra
-um aviso com quantos foram concluídos e quantos falharam; clicar nele abre a pasta.
+Os vídeos entram numa **fila**, que baixa 2 de cada vez. Dá para pausar a fila e cancelar um item. Se
+o app for fechado no meio, a fila volta pausada na próxima vez. Quando a fila termina com o app
+minimizado ou atrás de outra janela, o Windows mostra um aviso com quantos foram concluídos e quantos
+falharam; clicar nele abre a pasta.
 
-Os vídeos vão para a pasta **Vídeos\YouTube Downloader**. Para mudar, use **Alterar pasta**. Se
-já existir um arquivo com o mesmo nome, o novo é salvo como `Título (2)`, e nada é substituído.
+Os vídeos vão para a pasta **Vídeos\YouTube Downloader**, que aparece embaixo do formulário, com
+**Abrir pasta**. Se já existir um arquivo com o mesmo nome, o novo é salvo como `Título (2)`, e nada
+é substituído.
+
+## Configurações
+
+A aba **Configurações**, no canto direito do topo, guarda o que não muda de um download para o
+outro. Cada mudança vale na hora.
+
+- **Downloads**: **Alterar pasta** troca a pasta dos vídeos. **Downloads ao mesmo tempo** vai de 1 a
+  4; mais que 2 pode fazer o YouTube limitar a sua conexão.
+- **Áudio**: o **Formato**, M4A ou MP3.
+- **Transcrição pelo áudio**: o **Modelo do Whisper**. O padrão é o de 466 MB; há um menor, mais
+  rápido, e um maior, que erra menos e demora mais.
+- **Tradução**: a chave do DeepL e o idioma (veja [Tradução](#tradução-opcional)).
+- **Sobre**: a versão do app e a pasta de logs.
 
 ## Histórico
 
@@ -66,9 +89,10 @@ espanhol, num segundo `.txt` ao lado do original.
 
 1. Crie uma conta **DeepL API Free** em <https://www.deepl.com/pro-api>. O cadastro pede um cartão
    de crédito, mas o plano Free não cobra e traduz até 500 mil caracteres por mês.
-2. Copie a chave da conta (ela termina em `:fx`) e cole em **Tradução (DeepL)**, no app. Clique em
-   **Testar chave**.
-3. Ao adicionar vídeos com transcrição, marque **Traduzir para ...**.
+2. Copie a chave da conta (ela termina em `:fx`). No app, em **Configurações**, cole em **Chave do
+   DeepL**, clique em **Salvar chave** e depois em **Testar chave**. Escolha o idioma em **Traduzir
+   para**.
+3. Ao adicionar vídeos com transcrição, marque **Traduzir para ...** em **Mais opções**.
 
 A chave fica cifrada neste computador. Com a tradução ligada, o texto da transcrição é enviado ao
 DeepL. Se o vídeo já tem uma legenda no idioma escolhido, ela é usada no lugar da tradução e não
@@ -84,7 +108,7 @@ Manter o app atualizado importa: quando o YouTube muda, uma versão antiga pode 
 
 ## Se algo der errado
 
-Em **Problemas**, no fim da tela, **Abrir pasta de logs** mostra o registro do que o app fez, um
+Em **Configurações**, no fim da página, **Sobre** › **Abrir pasta de logs** mostra o registro do que o app fez, um
 arquivo por dia. Mande o arquivo do dia junto com a descrição do problema.
 
 ## Licenças
