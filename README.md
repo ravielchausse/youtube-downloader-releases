@@ -33,6 +33,10 @@ Na aba **Baixar**, escolha de onde vêm os vídeos:
 Copiou um link do YouTube? Ao abrir o app, ou ao voltar para ele, o campo do link já vem preenchido.
 Nada baixa sozinho, e o que você já tinha digitado nunca é trocado.
 
+Também dá para arrastar o link do navegador (da barra de endereço ou de um vídeo na página) para a
+janela do app. Ele vai para o campo do link, no lugar do que estava lá, ou entra como uma linha nova
+se a **Lista** estiver aberta.
+
 Antes de adicionar, escolha:
 
 - **O que salvar**: o vídeo, só o áudio, cada um com ou sem a transcrição, ou só a transcrição. O
