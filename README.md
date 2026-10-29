@@ -82,9 +82,10 @@ outro. Cada mudança vale na hora.
 
 ## Histórico
 
-A aba **Histórico** lista o que foi baixado neste computador. Dá para buscar pelo título, baixar de
-novo, mostrar o arquivo na pasta e tirar da lista (o arquivo continua onde está). Um vídeo que já
-foi baixado entra na fila com o aviso "Já baixado em ...".
+A aba **Histórico** lista o que foi baixado neste computador. Dá para buscar pelo título, **Baixar de
+novo** e **Mostrar arquivo** na pasta. Parando o mouse sobre o título, aparece onde o arquivo foi
+salvo. O **✕** tira o vídeo da lista, e o arquivo continua onde está. Um vídeo que já foi baixado
+entra na fila com o aviso "Já baixado em ...".
 
 ## Tradução (opcional)
 
